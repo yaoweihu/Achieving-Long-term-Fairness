@@ -80,7 +80,7 @@ class Agent:
 
 
 def gen_multi_step_profiles(model, agent, steps, noise=(0.05, 0.1), seed=2021):
-    np.random.seed(2021)
+    np.random.seed(seed)
     noise_list = noise[0] + (noise[1] - noise[0]) * np.random.rand(steps)
     
     Xs, Ys = [], []
